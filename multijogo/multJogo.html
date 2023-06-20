@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="multJogo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>JOKENPÔ - Jogo</title>
+</head>
+
+<body>
+
+    <div class="nav_bar">
+        <a href="../multiplayer/multi.html">Novo jogo</a>
+        <a href="../Index/index.html">Inicio</a>
+    </div>
+    <div class="conteudo">
+        <div class="divTexto">
+            <p>JOKENPÔ</p>
+        </div>
+        <div class="grid">
+
+            <div class="grid_e">
+                <h2 class="name" id="1"></h2>
+                <div class="opcoes"><label for="">A</label> <img class="ataque" src="../PEDRA D.png" alt=""></div>
+                <div class="opcoes"><label for="">S</label> <img class="ataque" src="../PAPEL D.png" alt=""></div>
+                <div id="opcoes" class="opcoes"><label for="">D</label> <img class="ataque" src="../TESOURA D.png"
+                        alt="">
+                </div>
+                <div>
+                    <h2 id="Sataque" class="Sataque"></h2>
+                </div>
+            </div>
+
+
+
+            <div class="grid_m">
+                <div class="placar">
+                    <p id="ponto1">0</p>
+                    <p class="vs">:</p>
+                    <p id="ponto2">0</p>
+                </div>
+                <div id="painel" class="painel">
+                    <div class="tempo">
+                        <span id="jokenpo"></span>
+
+
+                        <p id="segundos"></p>
+
+                        <button class="ButtonJogar" onclick="limpar()"> <b>JOGAR</b></button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="grid_d">
+                <h2 class="name" id="2"></h2>
+                <div class="opcoes"><img class="ataque2" src="../PEDRA D.png" alt=""> <label for="">1</label></div>
+                <div class="opcoes"><img class="ataque2" src="../PAPEL D.png" alt=""> <label for="">2</label></div>
+                <div class="opcoes"><img class="ataque2" src="../TESOURA D.png" alt=""> <label for="">3</label></div>
+            </div>
+
+
+        </div>
+    </div>
+
+<script src="multijogo.js"></script>
+</body>
+</html>

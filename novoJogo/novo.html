@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="novo.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>JOKENPÔ - Jogo</title>
+</head>
+
+<body>
+
+    <div class="nav_bar">
+        <a href="../novoJogo/novo.html">Novo jogo</a>
+        <a href="../Index/index.html">Inicio</a>
+    </div>
+    <div class="titulo">
+        <p>JOKENPÔ</p>
+    </div>
+    <div class="container">
+
+        <div class="grid_m">
+            <div class="placar">
+                <p id="ponto1">0</p>
+                <p class="vs">:</p>
+                <p id="ponto2">0</p>
+            </div>
+
+            <div id="painel" class="painel">
+                <div class="tempo">
+                    <span id="jokenpo"></span>
+
+
+                    <p id="segundos"></p>
+
+                    <button class="ButtonJogar" onclick="limpar()"> <b>JOGAR</b></button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_d">
+            <h2 class="name" id="2"></h2>
+            <div class="opcoes"><img class="ataque2" id="pedra" src="../PEDRA D.png" alt=""> <label for="">A</label>
+            </div>
+            <div class="opcoes"><img class="ataque3" id="papel" src="../PAPEL D.png" alt=""> <label for="">S</label>
+            </div>
+            <div class="opcoes"><img class="ataque4" id="tesoura" src="../TESOURA D.png" alt=""> <label for="">D</label>
+            </div>
+        </div>
+        <h2 id="Sataque" class="Sataque"></h2>
+    </div>
+
+
+</body>
+
+</html>
+<script src="novo.js"></script>
